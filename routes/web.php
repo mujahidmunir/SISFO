@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/a', function () {
-    return view('welcome');
-});
+Route::get('/', 'LayoutController@index');
+Route::get('/daftar-guru','LayoutController@list_teacher');
+Route::get('/tambah-guru','LayoutController@add_teacher');
+Route::get('/daftar-siswa','LayoutController@list_student');
+Route::get('/tambah-siswa','LayoutController@add_student');
+Route::get('/daftar-kelas','LayoutController@list_class');
+Route::get('/tambah-kelas','LayoutController@add_class');
+
+
