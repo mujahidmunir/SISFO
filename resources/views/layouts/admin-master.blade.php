@@ -1,37 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    
+<!-- Mirrored from bhulua.thememinister.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Nov 2019 09:23:07 GMT -->
 @include ('layouts.admin.head')
-<body>
-  <div class="loader"></div>
-  <div id="app">
-    <div class="main-wrapper main-wrapper-1">
-      <div class="navbar-bg"></div>
-        @include ('layouts.admin.nav')
-        @include ('layouts.admin.sidebar')
-          <!-- Main Content -->
-          <div class="main-content">
-            <section class="section">
-              <div class="section-body">
-                @yield('content')
-              </div>
-            </section>
-          </div>
-          <!-- Main Content -->
+    <body class="fixed">
+        <!-- Page Loader -->
+        @include ('layouts.admin.loader')
+            <!-- #END# Page Loader -->
+            <div class="wrapper">
+                @include ('layouts.admin.sidebar')
+                    <div class="content-wrapper">
+                        <div class="main-content">
+                            @include ('layouts.admin.header')
+                                @include ('layouts.admin.content-header')
 
-          <!-- Setting Sidebar -->
-            @include('layouts.admin.setting-sidebar')
-          <!-- End Setting Sidebar -->
+                                @include ('layouts.admin.body-content')
 
-
-      <!-- Footer -->
-        @include('layouts.admin.footer')
-
-      <!-- End Footer -->
-
-
-    </div>
-  </div>
-  @include('layouts.admin.script')
-
-<!-- Mirrored from radixtouch.in/templates/admin/aegis/source/dark/blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 11:09:25 GMT -->
+                        </div>
+                        @include('layouts.admin.footer')
+                        <div class="overlay"></div>
+                    </div>
+            </div>
+        @include ('layouts.admin.script')
+    </body>
 </html>
