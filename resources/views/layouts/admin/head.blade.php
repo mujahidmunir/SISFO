@@ -17,4 +17,5 @@
         <link href="{{URL::to('assets/plugins/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
         <!--Start Your Custom Style Now-->
         <link href="{{URL::to('assets/dist/css/style.css')}}" rel="stylesheet">
+        <link href="{{URL::to('assets/plugins/material_icons/materia_icons.css')}}" rel="stylesheet">
 </head>

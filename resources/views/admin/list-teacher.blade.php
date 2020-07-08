@@ -1,92 +1,119 @@
 @extends('layouts.admin-master')
+@section('title')
+Daftar Guru
+@endsection
+@section('header-name')
+Daftar Guru
+@endsection
 @section('content')
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <h4>Basic DataTables</h4>
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-striped" id="table-1">
-                <thead>
-                  <tr>
-                    <th class="text-center">
-                      No
-                    </th>
-                    <th>Nama</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tgl Lahir</th>
-                    <th>Status</th>
-                    <th class="text-center" style="width: 140px;">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center">1</td>
-                    <td>
-                        <img alt="image" src="{{URL::to('assets/img/users/user-5.png')}}" width="35">
-                        Dadang Konelo
-                    </td>
-                    <td class="align-middle">Bandung</td>
-                    <td>2018-01-20</td>
-                    <td>
-                      <div class="badge badge-primary badge-shadow">Guru</div>
-                    </td>
-                     <td class="align-center">
-                        <a href="#" data-toggle="tooltip" title="Detail" class="btn btn-icon btn-primary"><i class="far fa-user"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Edit" class="btn btn-icon btn-primary btn-xs"><i class="far fa-edit"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" class="btn btn-icon btn-primary"><i class="fas fa-trash-alt"></i></a>
-                     </td>
-                  </tr>
+<div class="card mb-4">
 
-                  <tr>
-                    <td class="text-center">1</td>
-                    <td>
-                        <img alt="image" src="{{URL::to('assets/img/users/user-5.png')}}" width="35">
-                        Aceng
-                    </td>
-                    <td class="align-middle">Garut</td>
-                    <td>2016-01-20</td>
-                    <td>
-                      <div class="badge badge-success badge-shadow">Kepala Tata Usaha</div>
-                    </td>
-                     <td class="align-center">
-                        <a href="#" data-toggle="tooltip" title="Detail" class="btn btn-icon btn-primary"><i class="far fa-user"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Edit" class="btn btn-icon btn-primary btn-xs"><i class="far fa-edit"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" class="btn btn-icon btn-primary"><i class="fas fa-trash-alt"></i></a>
-                     </td>
-                    </tr>
-
-                  <tr>
-                    <td class="text-center">1</td>
-                    <td>
-                        <img alt="image" src="{{URL::to('assets/img/users/user-5.png')}}" width="35">
-                        Udin
-                    </td>
-                    <td class="align-middle">Cikajang</td>
-                    <td>2016-01-20</td>
-                    <td>
-                      <div class="badge badge-primary badge-shadow">Guru</div>
-                    </td>
-                    <td class="align-center">
-                        <a href="#" data-toggle="tooltip" title="Detail" class="btn btn-icon btn-primary"><i class="far fa-user"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Edit" class="btn btn-icon btn-primary btn-xs"><i class="far fa-edit"></i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" class="btn btn-icon btn-primary"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                  </tr>
-
-
-                </tbody>
-              </table>
-            </div>
-          </div>
+<div class="text-right">
+<div class="actions">
+    <a href="#" class="action-item"><i class="ti-reload"></i></a>
+    <div class="dropdown action-item" data-toggle="dropdown">
+        <a href="#" class="action-item"><i class="ti-more-alt"></i></a>
+        <div class="dropdown-menu dropdown-menu-right">
+            <a href="#" class="dropdown-item">Refresh</a>
+            <a href="#" class="dropdown-item">Manage Widgets</a>
+            <a href="#" class="dropdown-item">Settings</a>
         </div>
-      </div>
     </div>
-
-
-
+</div>
+</div>
+    <div class="table-responsive">
+        <table class="table display table-bordered table-striped table-hover multi-column-ordering">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiger</td>
+                    <td>Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td>Garrett</td>
+                    <td>Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>$170,750</td>
+                </tr>
+                <tr>
+                    <td>Ashton</td>
+                    <td>Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>$86,000</td>
+                </tr>
+                <tr>
+                    <td>Cedric</td>
+                    <td>Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td>Airi</td>
+                    <td>Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>$162,700</td>
+                </tr>
+                <tr>
+                    <td>Brielle</td>
+                    <td>Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>$372,000</td>
+                </tr>
+                <tr>
+                    <td>Herrod</td>
+                    <td>Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>$137,500</td>
+                </tr>
+                <tr>
+                    <td>Rhona</td>
+                    <td>Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>$327,900</td>
+                </tr>
+                <tr>
+                    <td>Colleen</td>
+                    <td>Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>$205,500</td>
+                </tr>
+                <tr>
+                    <td>Sonya</td>
+                    <td>Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>$103,600</td>
+                </tr>
+                <tr>
+                    <td>Jena</td>
+                    <td>Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>$90,560</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 @endsection

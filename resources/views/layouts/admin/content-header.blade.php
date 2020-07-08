@@ -7,7 +7,7 @@
                 <h1 class="font-weight-bold">
                     @yield('header-name')
                 </h1>
-                <small>From now on you will start your activities.</small>
+
             </div>
         </div>
     </div>
