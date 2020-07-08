@@ -6,6 +6,7 @@ Daftar Guru
 Daftar Guru
 @endsection
 @section('content')
+
 <div class="card mb-4">
 
 <div class="text-right">
@@ -30,6 +31,7 @@ Daftar Guru
                     <th>Position</th>
                     <th>Office</th>
                     <th>Salary</th>
+                    <th class="text-center" style="width: 130px;">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,79 +41,39 @@ Daftar Guru
                     <td>System Architect</td>
                     <td>Edinburgh</td>
                     <td>$320,800</td>
+                    <td class="text-center">
+                        <a href="#" class="btn btn-success-soft btn-sm mr-1"><i class="far fa-eye"></i></a>
+                        <a href="#" class="btn btn-primary-soft btn-sm md-trigger md-setperspective" data-modal="modal-4">
+                            <i class="far fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger-soft btn-sm"><i class="far fa-trash-alt"></i></a>
+                    </td>
                 </tr>
-                <tr>
-                    <td>Garrett</td>
-                    <td>Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>$170,750</td>
-                </tr>
-                <tr>
-                    <td>Ashton</td>
-                    <td>Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>$86,000</td>
-                </tr>
-                <tr>
-                    <td>Cedric</td>
-                    <td>Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>$433,060</td>
-                </tr>
-                <tr>
-                    <td>Airi</td>
-                    <td>Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td>Brielle</td>
-                    <td>Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>$372,000</td>
-                </tr>
-                <tr>
-                    <td>Herrod</td>
-                    <td>Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>$137,500</td>
-                </tr>
-                <tr>
-                    <td>Rhona</td>
-                    <td>Davidson</td>
-                    <td>Integration Specialist</td>
-                    <td>Tokyo</td>
-                    <td>$327,900</td>
-                </tr>
-                <tr>
-                    <td>Colleen</td>
-                    <td>Hurst</td>
-                    <td>Javascript Developer</td>
-                    <td>San Francisco</td>
-                    <td>$205,500</td>
-                </tr>
-                <tr>
-                    <td>Sonya</td>
-                    <td>Frost</td>
-                    <td>Software Engineer</td>
-                    <td>Edinburgh</td>
-                    <td>$103,600</td>
-                </tr>
-                <tr>
-                    <td>Jena</td>
-                    <td>Gaines</td>
-                    <td>Office Manager</td>
-                    <td>London</td>
-                    <td>$90,560</td>
-                </tr>
+
             </tbody>
         </table>
+
+         
+        <div class="column">
+        <div class="md-modal md-effect-4" id="modal-4">
+            <div class="md-content">
+                <h4 class="font-weight-600 mb-0">Modal Dialog</h4>
+                <form method="post" action="asdf.php">
+                <div class="n-modal-body">
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-danger md-close" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
     </div>
 </div>
 
