@@ -30,7 +30,7 @@ Daftar Guru
                     <th>Last name</th>
                     <th>Position</th>
                     <th>Office</th>
-                    <th>Salary</th>
+                    <th class="text-center">Status</th>
                     <th class="text-center" style="width: 130px;">Action</th>
                 </tr>
             </thead>
@@ -40,9 +40,11 @@ Daftar Guru
                     <td>Nixon</td>
                     <td>System Architect</td>
                     <td>Edinburgh</td>
-                    <td>$320,800</td>
                     <td class="text-center">
-                        <a href="#" class="btn btn-success-soft btn-sm mr-1"><i class="far fa-eye"></i></a>
+                        <input type="checkbox" checked data-toggle="toggle" data-size="xs">
+                    </td>
+                    <td class="text-center">
+                        <a href="{{URL::to('guru/detail/')}}" class="btn btn-success-soft btn-sm mr-1"><i class="far fa-eye"></i></a>
                         <a href="#" class="btn btn-primary-soft btn-sm md-trigger md-setperspective" data-modal="modal-4">
                             <i class="far fa-edit"></i></a>
                         <a href="#" class="btn btn-danger-soft btn-sm"><i class="far fa-trash-alt"></i></a>
@@ -52,7 +54,7 @@ Daftar Guru
             </tbody>
         </table>
 
-         
+
         <div class="column">
         <div class="md-modal md-effect-4" id="modal-4">
             <div class="md-content">

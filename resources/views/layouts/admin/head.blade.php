@@ -18,5 +18,13 @@
         <!--Start Your Custom Style Now-->
         <link href="{{URL::to('assets/dist/css/style.css')}}" rel="stylesheet">
         <link href="{{URL::to('assets/plugins/material_icons/materia_icons.css')}}" rel="stylesheet">
-         <link href="{{URL::to('assets/plugins/modals/component.css')}}" rel="stylesheet">
+        <link href="{{URL::to('assets/plugins/modals/component.css')}}" rel="stylesheet">
+        
+        <link href="{{ URL::to('assets/dist/css/select.html') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ URL::to('assets/plugins/dropzone/dist/min/dropzone.min.css') }}" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('assets/plugins/icheck/skins/all.css') }}" rel="stylesheet">
+        <link href="{{ URL::to('assets/plugins/bootstrap4-toggle/css/bootstrap4-toggle.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::to('assets/plugins/sweetalert/sweetalert.css') }}" rel="stylesheet">
+        <link href="{{ URL::to('assets/plugins/toastr/toastr.css') }}" rel="stylesheet">
 </head>

@@ -12,15 +12,17 @@
                     <div class="content-wrapper">
                         <div class="main-content">
                             @include ('layouts.admin.header')
-                                @include ('layouts.admin.content-header')
+
+                                @yield ('dashboard')
 
                                 @include ('layouts.admin.body-content')
-
+                            
                         </div>
                         @include('layouts.admin.footer')
                         <div class="overlay"></div>
                     </div>
             </div>
         @include ('layouts.admin.script')
+        @include('sweetalert::alert')
     </body>
 </html>

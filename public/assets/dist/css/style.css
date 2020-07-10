@@ -3954,11 +3954,11 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role=row]>th:first-child:before {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
-    content: "\e64b"
+    
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b:before {
-    content: "\e648"
+    
 }
 
 .select2-container--default .select2-selection--single .select2-selection__clear {

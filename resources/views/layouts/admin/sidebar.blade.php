@@ -17,16 +17,7 @@
                     <nav class="sidebar-nav">
                         <ul class="metismenu">
                             <li class="nav-label">Main Menu</li>
-                            <li class="">
-                                <a class="has-arrow material-ripple" href="#">
-                                    <i class="typcn typcn-home-outline mr-2"></i>
-                                    Dashboard
-                                </a>
-                                <ul class="nav-second-level">
-                                    <li class=""><a href="index-2.html">Default</a></li>
-                                    <li><a href="dashboard_two.html">Dashboard Two</a></li>
-                                </ul>
-                            </li>
+                            <li class="mm-active"><a href="{{URL::to('dashboard')}}"><i class="typcn typcn-home-outline mr-2"></i> Dashboard</a></li>
                             <li>
                                 <a class="has-arrow material-ripple" href="#">
                                     <i class="typcn typcn-chart-pie-outline mr-2"></i>
@@ -43,7 +34,8 @@
                                     Siswa
                                 </a>
                                 <ul class="nav-second-level">
-                                    <li><a href="charts_flot.html">Flot Chart</a></li>
+                                    <li><a href="{{URL::to('/tambah-siswa')}}">Tambah Siswa</a></li>
+                                    <li><a href="{{URL::to('/daftar-siswa')}}">Daftar Siswa</a></li>
 
                                 </ul>
                             </li>
@@ -51,17 +43,34 @@
                             <li>
                                 <a class="has-arrow material-ripple" href="#">
                                     <i class="typcn typcn-chart-pie-outline mr-2"></i>
+                                    Pengaturan
+                                </a>
+                                <ul class="nav-second-level">
+                                    <li><a href="{{ URL::to('daftar-kelas') }}"><i class="typcn typcn-messages mr-2"></i> Kelas</a></li>
+                                    <li><a href="{{ URL::to('daftar-mapel') }}"><i class="typcn typcn-messages mr-2"></i> Mapel</a></li>
+                                    <li><a href="{{ URL::to('daftar-tahun-ajaran') }}"><i class="typcn typcn-messages mr-2"></i> Tahun Ajaran</a></li>
+                                </ul>
+                            </li>
+                            
+                            
+                            
+
+                            <li>
+                                <a class="has-arrow material-ripple" href="#">
+                                    <i class="typcn typcn-chart-pie-outline mr-2"></i>
                                     Kelas
                                 </a>
                                 <ul class="nav-second-level">
-                                    <li><a href="charts_flot.html">Flot Chart</a></li>
+                                    <li><a href="{{URL::to('/tambah-siswa')}}">Tambah Kelas</a></li>
+                                    <li><a href="{{URL::to('/daftar-siswa')}}">Daftar Siswa</a></li>
+
 
                                 </ul>
                             </li>
 
 
 
-                            <li><a href="chat.html"><i class="typcn typcn-messages mr-2"></i> Chat</a></li>
+                            
 
                         </ul>
                     </nav>
