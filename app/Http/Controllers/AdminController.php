@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Classes;
 use App\Subject;
+use App\Year;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -49,6 +50,28 @@ class AdminController extends Controller
 		$sbj->sbj_description	= $request->input('sbj_description');
 		$sbj->save();
 		return redirect('daftar-mapel')->withSuccess('Data Berhasil Dirubah');
+	}
+
+
+	//list years
+
+	public function list_years(){
+		$yrs = Year::orderBy('yrs_name','DESC')->get();
+		$no=1;
+		return view('admin.list-years', compact(['yrs','no']));
+	}
+
+	public function add_year(Request $request){
+		Year::create($request->all());
+		return redirect('tahun-ajaran')->withSuccess('Tahun Ajaran Berhasil Ditambah');
+	}
+
+	public function update_year(Request $request, $id)
+	{
+		$yrs = Year::whereYrsId($id)->first();
+		$yrs->yrs_name = $request->input('yrs_name');
+		$yrs->save();
+		return redirect('tahun-ajaran')->withSuccess('Tahun Ajaran Berhasil Dirubah');
 	}
 
 

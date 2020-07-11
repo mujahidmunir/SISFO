@@ -48,7 +48,7 @@
                                 <ul class="nav-second-level">
                                     <li><a href="{{ URL::to('daftar-kelas') }}"><i class="typcn typcn-messages mr-2"></i> Kelas</a></li>
                                     <li><a href="{{ URL::to('daftar-mapel') }}"><i class="typcn typcn-messages mr-2"></i> Mapel</a></li>
-                                    <li><a href="{{ URL::to('daftar-tahun-ajaran') }}"><i class="typcn typcn-messages mr-2"></i> Tahun Ajaran</a></li>
+                                    <li><a href="{{ URL::to('tahun-ajaran') }}"><i class="typcn typcn-messages mr-2"></i> Tahun Ajaran</a></li>
                                 </ul>
                             </li>
                             
